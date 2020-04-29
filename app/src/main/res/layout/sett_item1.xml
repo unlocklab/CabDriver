@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/margin_lg"
+    android:paddingBottom="@dimen/margin"
+    android:paddingLeft="@dimen/margin"
+    android:paddingRight="@dimen/margin"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:text="Lorem Ipsome"
+        android:fontFamily="@font/font1"
+        android:includeFontPadding="false"
+        android:textAllCaps="true"
+        android:textSize="@dimen/txt_size_md1"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

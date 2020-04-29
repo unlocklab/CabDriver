@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_ract3"
+    android:backgroundTint="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin1"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin"
+        android:paddingBottom="@dimen/margin1"
+        >
+
+        <RelativeLayout
+            android:id="@+id/imv_rl"
+            android:layout_width="@dimen/size62"
+            android:layout_height="@dimen/size62"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/lgry">
+
+            <ImageView
+                android:layout_width="@dimen/size2"
+                android:layout_height="@dimen/size2"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/user_icon"
+                android:tint="@color/dgry" />
+
+            <ImageView
+                android:id="@+id/imv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/app_color"
+            android:padding="@dimen/margin"
+            android:src="@drawable/right_arrow"
+            android:tint="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_toLeftOf="@id/right_icon"
+            android:layout_toRightOf="@id/imv_rl"
+            android:paddingLeft="@dimen/margin1">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font2"
+                android:includeFontPadding="false"
+                android:text="Lisa Ray"
+                android:textColor="@color/black"
+                android:textSize="@dimen/txt_size_lg" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt1"
+                android:scaleX=".5"
+                android:numStars="5"
+                android:rating="4"
+                android:isIndicator="true"
+                android:scaleY=".5"
+                android:transformPivotX="0dp"
+                android:transformPivotY="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rrt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imv_rl"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:paddingLeft="@dimen/margin">
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:fontFamily="@font/font2"
+                android:includeFontPadding="false"
+                android:text="Station A"
+                android:textColor="@color/dgry1"
+                android:textSize="@dimen/txt_size_md1" />
+            <TextView
+                android:id="@+id/txtyy"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/margin1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font2"
+                android:includeFontPadding="false"
+                android:layout_below="@id/txt2"
+                android:text="to"
+                android:textColor="@color/dgry1"
+                android:textSize="@dimen/txt_size_md1" />
+            <TextView
+                android:id="@+id/txt21"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font2"
+                android:layout_below="@id/txtyy"
+                android:layout_marginTop="@dimen/margin1"
+                android:includeFontPadding="false"
+                android:text="Station B"
+                android:textColor="@color/dgry1"
+                android:textSize="@dimen/txt_size_md1" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rrt"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:weightSum="4">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font2"
+                    android:includeFontPadding="false"
+                    android:text="Fare"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_md" />
+                <TextView
+                    android:id="@+id/fare_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:layout_below="@id/t1"
+                    android:layout_marginTop="@dimen/margin"
+                    android:includeFontPadding="false"
+                    android:text="$100"
+                    android:gravity="center"
+                    android:textColor="@color/dgry1"
+                    android:textSize="@dimen/txt_size_md" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font2"
+                    android:includeFontPadding="false"
+                    android:text="DIstance"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_md" />
+                <TextView
+                    android:id="@+id/distance_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:layout_below="@id/t2"
+                    android:layout_marginTop="@dimen/margin"
+                    android:includeFontPadding="false"
+                    android:text="10 KM"
+                    android:gravity="center"
+                    android:textColor="@color/dgry1"
+                    android:textSize="@dimen/txt_size_md" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font2"
+                    android:includeFontPadding="false"
+                    android:text="Duration"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_md" />
+                <TextView
+                    android:id="@+id/duration_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:layout_below="@id/t3"
+                    android:layout_marginTop="@dimen/margin"
+                    android:includeFontPadding="false"
+                    android:text="15 Min"
+                    android:gravity="center"
+                    android:textColor="@color/dgry1"
+                    android:textSize="@dimen/txt_size_md" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font2"
+                    android:includeFontPadding="false"
+                    android:text="Payment Type"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_md" />
+                <TextView
+                    android:id="@+id/pay_type_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:layout_below="@id/t4"
+                    android:layout_marginTop="@dimen/margin"
+                    android:includeFontPadding="false"
+                    android:text="Cash"
+                    android:gravity="center"
+                    android:textColor="@color/dgry1"
+                    android:textSize="@dimen/txt_size_md" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

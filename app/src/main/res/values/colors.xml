@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30c17c</color>
+    <color name="colorPrimaryDark">#2aa76b</color>
+    <color name="colorAccent">#30c17c</color>
+
+
+    <color name="app_color">#30c17c</color>
+    <color name="white">#ffffff</color>
+    <color name="white1">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="gry">#dddddd</color>
+    <color name="lgry">#f5f3f3</color>
+    <color name="dgry">#7c7a7a</color>
+    <color name="dgry1">#424141</color>
+    <color name="blue">#6353bf</color>
+    <color name="pink_dark">#cb731c</color>
+    <color name="purple">#802ab4</color>
+    <color name="brown">#bd3b46</color>
+    <color name="blue1">#09accd</color>
+    <color name="red">#e81616</color>
+    <color name="green">#26df44</color>
+    <color name="yellow">#d9e018</color>
+
+</resources>

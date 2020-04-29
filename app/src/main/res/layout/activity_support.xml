@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:onClick="NavNow"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        android:src="@drawable/back_icon"
+        android:tint="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_md"
+        android:weightSum="1">
+
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:includeFontPadding="false"
+            android:text="@string/support_request"
+            android:textColor="@color/black"
+            android:textSize="@dimen/txt_size_xlg" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:layout_marginTop="@dimen/margin"
+            android:fontFamily="@font/font1"
+            android:includeFontPadding="false"
+            android:text="@string/punch_line"
+            android:textColor="@color/dgry"
+            android:textSize="@dimen/txt_size_md1" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size62"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:background="@drawable/round_ract0"
+            android:paddingLeft="@dimen/margin1"
+            android:paddingRight="@dimen/margin">
+
+
+            <EditText
+                android:id="@+id/et1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin"
+                android:background="@null"
+                android:fontFamily="@font/font1"
+                android:hint="@string/title"
+                android:includeFontPadding="false"
+                android:inputType="text"
+                android:singleLine="true"
+                android:textColor="@color/dgry"
+                android:textColorHint="@color/dgry"
+                android:textSize="@dimen/txt_size_lg" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size8"
+            android:layout_marginTop="@dimen/margin_md"
+            android:background="@drawable/round_ract0"
+            android:padding="@dimen/margin1">
+
+
+            <EditText
+                android:id="@+id/et2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:fontFamily="@font/font1"
+                android:gravity="top|left"
+                android:hint="@string/details"
+                android:includeFontPadding="false"
+                android:inputType="textEmailAddress|textMultiLine"
+                android:lines="20"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textColor="@color/dgry"
+                android:textColorHint="@color/dgry"
+                android:textSize="@dimen/txt_size_lg" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size62"
+            android:layout_marginTop="@dimen/margin_lg"
+            android:background="@drawable/bt_bg"
+            android:backgroundTint="@color/app_color"
+            android:fontFamily="@font/font2"
+            android:includeFontPadding="false"
+            android:onClick="LoginNow"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_size_lg" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources>
+
+    <dimen name="sizesm">2dp</dimen>
+    <dimen name="sizesm1">4dp</dimen>
+    <dimen name="size">8dp</dimen>
+    <dimen name="size1">10dp</dimen>
+    <dimen name="size20">13dp</dimen>
+    <dimen name="size2">20dp</dimen>
+    <dimen name="size3">25dp</dimen>
+    <dimen name="size4">30dp</dimen>
+    <dimen name="size5">35dp</dimen>
+    <dimen name="size6">45dp</dimen>
+    <dimen name="size06">75dp</dimen>
+    <dimen name="size61">65dp</dimen>
+    <dimen name="size62">55dp</dimen>
+    <dimen name="size7">90dp</dimen>
+    <dimen name="size8">110dp</dimen>
+    <dimen name="size9">180dp</dimen>
+    <dimen name="size90">200dp</dimen>
+    <dimen name="size10">230dp</dimen>
+    <dimen name="size100">250dp</dimen>
+    <dimen name="size11">230dp</dimen>
+    <dimen name="size12">380dp</dimen>
+
+    <dimen name="txt_size">10dp</dimen>
+    <dimen name="txt_size_md">12dp</dimen>
+    <dimen name="txt_size_md1">14dp</dimen>
+    <dimen name="txt_size_lg">18dp</dimen>
+    <dimen name="txt_size_xlg">20dp</dimen>
+    <dimen name="txt_size_xxlg">22dp</dimen>
+    <dimen name="txt_size_xxxlg">33dp</dimen>
+    <dimen name="txt_size_xxxxlg">43dp</dimen>
+    <dimen name="txt_size_vlg">47dp</dimen>
+
+
+    <dimen name="margin">8dp</dimen>
+    <dimen name="margin1">15dp</dimen>
+    <dimen name="margin_md">14dp</dimen>
+    <dimen name="margin_lg">20dp</dimen>
+    <dimen name="margin_xlg">25dp</dimen>
+    <dimen name="margin_xxlg">33dp</dimen>
+    <dimen name="margin_xxxlg">42dp</dimen>
+    <dimen name="margin_xxxxlg">63dp</dimen>
+    <dimen name="margin_vlg">85dp</dimen>
+
+
+    <dimen name="nav_header_vertical_spacing">14dp</dimen>
+    <dimen name="nav_header_height">240dp</dimen>
+    <dimen name="nav_header_width">290dp</dimen>
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">14dp</dimen>
+    <dimen name="nav_header_margin">-63dp</dimen>
+</resources>

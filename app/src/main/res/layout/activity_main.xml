@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+
+    <include
+        android:id="@+id/rl1"
+        layout="@layout/tool1" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin"
+        android:elevation="2dp"
+        android:outlineAmbientShadowColor="@color/app_color"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin1">
+
+            <RelativeLayout
+                android:id="@+id/imv_rl"
+                android:layout_width="@dimen/size6"
+                android:layout_height="@dimen/size6"
+                android:background="@drawable/circle_shape"
+                android:backgroundTint="@color/lgry">
+
+                <ImageView
+                    android:layout_width="@dimen/size2"
+                    android:layout_height="@dimen/size2"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/user_icon"
+                    android:tint="@color/dgry" />
+
+                <ImageView
+                    android:id="@+id/imv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="@dimen/size4"
+                android:layout_height="@dimen/size4"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_shape"
+                android:backgroundTint="@color/app_color"
+                android:padding="@dimen/margin"
+                android:src="@drawable/right_arrow"
+                android:tint="@color/white" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin"
+                android:layout_toLeftOf="@id/right_icon"
+                android:layout_toRightOf="@id/imv_rl"
+                android:paddingLeft="@dimen/margin1">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_mid"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txt_size_lg" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt1"
+                    android:scaleX=".5"
+                    android:numStars="5"
+                    android:rating="4"
+                    android:isIndicator="true"
+                    android:scaleY=".5"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rrt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imv_rl"
+                android:layout_marginTop="@dimen/margin_lg"
+                android:paddingLeft="@dimen/margin">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font1"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/dgry1"
+                    android:textSize="@dimen/txt_size_lg" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1">
+
+        <fragment xmlns:map="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <androidx.cardview.widget.CardView
+            android:id="@+id/search_rl"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_md"
+            android:elevation="2dp"
+            android:outlineAmbientShadowColor="@color/app_color"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/margin_md">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingLeft="@dimen/margin1"
+                android:paddingRight="@dimen/margin1"
+                android:layout_height="@dimen/size6">
+                <ImageView
+                    android:id="@+id/search_icon"
+                    android:layout_width="@dimen/size2"
+                    android:src="@drawable/search_icon"
+                    android:layout_centerVertical="true"
+                    android:tint="@color/dgry"
+                    android:layout_height="@dimen/size2"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:layout_toRightOf="@id/search_icon"
+                    android:layout_marginLeft="@dimen/margin1"
+                    android:textSize="@dimen/txt_size_lg"
+                    android:hint="@string/search"
+                    android:includeFontPadding="false"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/dgry"
+                    android:textColorHint="@color/dgry"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

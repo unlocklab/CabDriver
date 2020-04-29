@@ -1,0 +1,2 @@
+include ':app',':multipicker'
+rootProject.name='CabBooking'
